@@ -1,1 +1,18 @@
-p 3
+mixin homePost(img,name,link)
+	.mainRight__column.item
+		a(href=link class="item__link")
+			.item__img
+				img(src=img alt=name)
+			.item__title
+				h2=name
+		span.hr
+
+.mainRight
+	.mainRight__wrap
+		.mainRight__heading
+			h2 Полезные статьи
+		.mainRight__row
+			+homePost('static/images/content/1.jpg','Как выбрать няню','#')
+			+homePost('static/images/content/1.jpg','Как выбрать няню','#')
+			+homePost('static/images/content/1.jpg','Как выбрать няню','#')
+			+homePost('static/images/content/1.jpg','Как выбрать няню','#')
