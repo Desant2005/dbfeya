@@ -1,0 +1,39 @@
+mixin leftNavSub(name,link)
+	li.sub-nav__item
+		a(href=link class="sub-nav__link")=name
+
+.mainLeft
+	ul.mainLeft__nav
+		li.item.menuitem
+			a(class="item__link menusub") Няни
+				+icon('down','item__icon')
+			ul.sub-nav  
+				+leftNavSub('Требуется няня','#')
+				+leftNavSub('Няня для младенца','#')
+				+leftNavSub('Найти няню','#')
+				+leftNavSub('Православная няня','#')
+				+leftNavSub('Бэби ситтер Baby Sitter','#')
+				+leftNavSub('Авто няня','#')
+				+leftNavSub('Няни для детей','#')
+				+leftNavSub('Няня для девочки','#')
+				+leftNavSub('Няня к грудничку','#')
+				+leftNavSub('Няня сопровождение','#')
+				+leftNavSub('Няня воспитатель','#')
+				+leftNavSub('Няня для двойни','#')
+				+leftNavSub('Поиск няни','#')
+				+leftNavSub('Услуги няни','#')
+				+leftNavSub('Няня гувернантка','#')
+				+leftNavSub('Няня с проживанием','#')
+				+leftNavSub('Няня новорожденным','#')
+				+leftNavSub('Нанять няню','#')
+				+leftNavSub('Няня мусульманка','#')
+				+leftNavSub('Нужна няня','#')
+				+leftNavSub('Анализы для няни','#')
+				+leftNavSub('Няня в православную семью','#')
+		li.item.menuitem
+			a(class="item__link menusub") Няни
+				+icon('down','item__icon')
+			ul.sub-nav  
+				+leftNavSub('Требуется няня','#')
+
+

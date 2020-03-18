@@ -1,0 +1,37 @@
+.main {
+	padding: 30px 0;
+	position: relative;
+	overflow: hidden;
+	&__bg {
+		position: absolute;
+		left: 0;
+		top: 0;
+		object-fit: cover;
+		width: 100%;
+		z-index: -1;
+	}
+	&__row {
+		display: flex;
+		justify-content: space-between;
+	}
+	&__left {
+		display: flex;
+		justify-content: flex-start;
+		height: 100%;
+	}
+	&__body {
+		flex: 0 1 700px;
+		display: flex;
+		justify-content: center;
+		background: #fff;
+		border-radius: 7px;
+	}
+	&__right {
+		display: flex;
+		justify-content: center;
+	}
+}
+
+@import "mainLeft";
+@import "mainBody";
+@import "mainRight";

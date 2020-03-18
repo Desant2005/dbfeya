@@ -1,0 +1,20 @@
+- let phone = [{link:'+78632697581',text:'+7 (863) 269-75-81'},{link:'+79895163131',text:'+7 (989) 516-31-31'}]
+
+.logoLine
+	.logoLine__row
+		.logoLine__col-logo
+			.logo
+				img.logo__img(src="static/images/general/logo.png" alt="Добрая фея" srcset="static/images/general/logo@2x.png 2x, static/images/general/logo@3x.png 3x,")
+				.logo__text
+					h2.left Добрая
+					h2.right Фея
+		.logoLine__col-info
+			.info
+				.info__phones.phone
+					.phone__text
+						span Телефоны для связи:
+					.phone__tel
+						each i in phone
+							a(href=i.link)=i.text
+				.info__header
+					h1= h1

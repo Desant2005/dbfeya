@@ -1,0 +1,22 @@
+mixin topList(icon,p,span,link,a)
+	.item
+		.item__icon
+			+icon(icon, 'icon')
+		.item__text
+			p= p
+				span(class!=attributes.class)= span
+					if (a) 
+						a(href="link")= a
+
+.top-line
+	.top-line__row
+		.top-line__column
+			+topList('calendar','Мы работаем','Пн-Вт-Ср-Чт-Пт-Сб')(class="green")
+			+topList('alert','Выходной:','Вс')(class="red")
+		.top-line__column
+			+topList('clock','Время работы:','с 10:00 до 18:00')
+			+topList('location','Наш адрес:','г.Ростов-на-Дону, ул. Суворова №103/45')
+		.top-line__column
+			+topList('email','E-mail:','','mailto:dbfeya@mail.ru','dbfeya@mail.ru')
+			+topList('skype','Skype:','dbfeya')
+

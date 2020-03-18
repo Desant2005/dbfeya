@@ -1,0 +1,13 @@
+mixin menu(link,name)
+	li.nav__item
+		a(href=link class="nav__link")= name
+
+nav.nav
+	ul.nav__list
+		+menu('#','Об агентстве')
+		+menu('#','Услуги')
+		+menu('#','Соискателям')
+		+menu('#','Работодателям')
+		+menu('#','Статьи')
+		+menu('#','Контакты')
+
